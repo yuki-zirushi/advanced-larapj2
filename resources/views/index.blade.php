@@ -1,16 +1,16 @@
 @extends('layouts.default')
 <style>
   th {
-    backgroud-color: red;
+    background-color: #289ADC;
     color: white;
     padding: 5px 40px;
   }
   tr:nth-child(odd) td{
-    backgroud-color: #FFFFFF;
+    background-color: #FFFFFF;
   }
   td {
     padding: 25px 40px;
-    backgroud-color: #EEEEEE;
+    background-color: #EEEEEE;
     text-align: center;
   }
 </style>
