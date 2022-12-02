@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Author;
+use App\Http\Requests\AuthorRequest;
 
 class AuthorController extends Controller
 {
@@ -26,5 +27,17 @@ class AuthorController extends Controller
             'input' => $request->input
         ];
         return view('find', $param);
+    }
+
+    public function add()
+    {
+        return view('add');
+    }
+
+    public function create(AuthorRequest $request)
+    {
+        $form = $request->all();
+        Author::create($form);
+        return redirect('/');
     }
 }
