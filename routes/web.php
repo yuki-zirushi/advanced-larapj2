@@ -26,4 +26,4 @@ Route::get('/delete', [AuthorController::class, 'delete']);
 Route::post('/delete', [AuthorController::class, 'remove']);
 Route::get('/author/{author}', [AuthorController::class, 'bind']);
 Route::get('/middleware', [AuthorController::class, 'get']);
-Route::get('/middleware', [AuthorController::class, 'post'])->middleware(FirstMiddleware::class);
+Route::get('/middleware', [AuthorController::class, 'post']);
